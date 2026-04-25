@@ -73,6 +73,13 @@
   border: 3px solid #fff;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
+
+ .nav-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
  
   nav a.btn-nav:hover {
     border-color: var(--glow);
@@ -868,12 +875,26 @@
 <body>
 
 <!-- NAV -->
+ <!-- siara
  <nav>
   <a href="#" class="logo"><b><em>Rant</em>Buddy</b></a>
     <img src="https://rant-buddy.github.io/logo.webp" alt="Rant Buddy Logo" class="logofoot" width="140" heigth="140">
   </a>
   <a href="#sessions" class="btn-nav">Book a Call</a>
 </nav>
+ -->
+<nav class="nav-wrap">
+  <a href="#" class="logo-text"><b><em>Rant</em>Buddy</b></a>
+
+  <img src="https://rant-buddy.github.io/logo.webp"
+       alt="Rant Buddy Logo"
+       class="logofoot"
+       width="140"
+       height="140">
+
+  <a href="#sessions" class="btn-nav">Book a Call</a>
+</nav>
+ 
 
 <!-- HERO -->
 <section id="hero">
