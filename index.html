@@ -64,10 +64,15 @@
     border-radius: 40px;
     transition: all 0.3s;
   }
- .logofoot {
+
+ .logofoot{
+  width: 140px;
+  height: 140px;        /* fix typo from heigth */
+  border-radius: 50%;   /* makes it round */
+  object-fit: cover;    /* prevents squishing */
   display: block;
-  margin-left: 100;
-  }
+}
+ 
   nav a.btn-nav:hover {
     border-color: var(--glow);
     background: var(--glowsoft);
