@@ -831,6 +831,15 @@
     font-style: italic;
   }
 
+ .footer-row{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap; /* makes it responsive on small screens */
+}
+
+
   /* ─── SCROLL REVEAL ─── */
   .reveal {
     opacity: 0;
@@ -1071,7 +1080,7 @@
 
 <!-- FOOTER / CONTACT -->
 <footer id="contact">
- <nav>
+ <div class="footer-row">
   <div class="footer-brand">
     <a href="#" class="logo"><em>Rant</em> Buddy</a>
     <p class="footer-tagline">A human-centered emotional support platform. Judgment-free listening sessions for people who need a safe space to vent — not advice, not therapy.</p>
@@ -1089,7 +1098,7 @@
       Chat on WhatsApp
     </a>
   </div>
-</nav>
+</div>
 
  
   <div class="footer-bottom">
