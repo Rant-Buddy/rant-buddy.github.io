@@ -54,27 +54,32 @@
     backdrop-filter: blur(4px);
   }
   .logo {
-    font-family: var(--r);
-    font-size: 2.5rem;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    color: var(--text);
-    text-decoration: none;
-  }
-  .logo em { font-style: italic; color: var(--heart); }
-  nav a.btn-nav {
-    font-family: var(--s);
-    font-size: 0.8rem;
-    font-weight: 400;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--text);
-    text-decoration: none;
-    border: 1px solid var(--border);
-    padding: 9px 22px;
-    border-radius: 40px;
-    transition: all 0.3s;
-  }
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* REMOVE text styling since you're not using text logo anymore */
+/* .logo em can also be removed if not needed */
+
+.logo img {
+  height: 45px;   /* controls logo size */
+  width: auto;
+}
+
+nav a.btn-nav {
+  font-family: var(--s);
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  padding: 9px 22px;
+  border-radius: 40px;
+  transition: all 0.3s;
+}
   nav a.btn-nav:hover {
     border-color: var(--glow);
     background: var(--glowsoft);
@@ -788,12 +793,7 @@
 <!-- NAV -->
  <nav>
   <a href="#" class="logo"><b><em>Rant</em>Buddy</b></a>
-    <img src="https://raw.githubusercontent.com/Rant-Buddy/rant-buddy.github.io/main/logo.webp" alt="Rant Buddy Logo">
-  .hero-logo {
-  max-width: 300px;   /* control size */
-  width: 100%;
-  height: auto;
-}
+    <img src="https://rant-buddy.github.io/logo.webp" alt="Rant Buddy Logo">
   </a>
   <a href="#sessions" class="btn-nav">Book a Call</a>
 </nav>
