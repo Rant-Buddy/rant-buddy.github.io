@@ -42,44 +42,32 @@
   }
 
   /* ─── NAV ─── */
-  nav {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 100;
-    padding: 20px 6vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to bottom, rgba(3,5,15,0.95), transparent);
-    backdrop-filter: blur(4px);
+.logo {
+    font-family: var(--r);
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: var(--text);
+    text-decoration: none;
   }
-  .logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-/* REMOVE text styling since you're not using text logo anymore */
-/* .logo em can also be removed if not needed */
-
-.logo img {
-  height: 45px;   /* controls logo size */
-  width: auto;
-}
-
-nav a.btn-nav {
-  font-family: var(--s);
-  font-size: 0.8rem;
-  font-weight: 400;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text);
-  text-decoration: none;
-  border: 1px solid var(--border);
-  padding: 9px 22px;
-  border-radius: 40px;
-  transition: all 0.3s;
-}
+  .logo em { font-style: italic; color: var(--heart); }
+  nav a.btn-nav {
+    font-family: var(--s);
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    padding: 9px 22px;
+    border-radius: 40px;
+    transition: all 0.3s;
+  }
+ .logofoot {
+  display: block;
+  margin-left: 0;
+  }
   nav a.btn-nav:hover {
     border-color: var(--glow);
     background: var(--glowsoft);
@@ -793,7 +781,7 @@ nav a.btn-nav {
 <!-- NAV -->
  <nav>
   <a href="#" class="logo"><b><em>Rant</em>Buddy</b></a>
-    <img src="https://rant-buddy.github.io/logo.webp" alt="Rant Buddy Logo">
+    <img src="https://rant-buddy.github.io/logo.webp" alt="Rant Buddy Logo" class="logofoot">
   </a>
   <a href="#sessions" class="btn-nav">Book a Call</a>
 </nav>
