@@ -710,6 +710,75 @@
   }
   .footer-brand .logo { display: inline-block; margin-bottom: 16px; }
   .footer-tagline { font-size: 0.88rem; color: var(--muted); line-height: 1.8; max-width: 300px; }
+
+
+ /*------------siara changes - start ---------------*/
+.footer-connect{
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-connect h4{
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.contact-item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.contact-item span{
+  font-weight: 600;
+  color: #555;
+}
+
+.contact-item a{
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.contact-item a:hover{
+  text-decoration: underline;
+}
+
+.wa-btn{
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  background: #25D366;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.wa-btn:hover{
+  background: #1ebe5d;
+}
+
+.wa-icon{
+  width: 22px;
+  height: 22px;
+}
+ 
+
+ /*------------siara changes -end ---------------*/
+
+ /*
   .footer-connect { }
   .footer-connect h4 {
     font-family: var(--r);
@@ -717,6 +786,7 @@
     font-weight: 400;
     margin-bottom: 20px;
   }
+ 
   .wa-btn {
     display: inline-flex;
     align-items: center;
@@ -739,6 +809,10 @@
   .wa-icon {
     width: 20px; height: 20px;
   }
+
+*/
+
+ 
   .footer-bottom {
     border-top: 1px solid var(--border);
     padding-top: 28px;
@@ -1010,18 +1084,19 @@
       Chat on WhatsApp
     </a>
   </div>
-<div class="footer-connect">
-  <h4>Connect with us:</h4>
 
-  <p>
-    Mail:
+ <div class="footer-connect">
+  <h4>Connect with us</h4>
+
+  <div class="contact-item">
+    <span>Mail</span>
     <a href="mailto:rantbuddytn@gmail.com">rantbuddytn@gmail.com</a>
-  </p>
+  </div>
 
-  <p>
-    Phone:
+  <div class="contact-item">
+    <span>Phone</span>
     <a href="tel:9843543455">9843543455</a>
-  </p>
+  </div>
 
   <a href="https://wa.me/919843543455" class="wa-btn" target="_blank">
     <svg class="wa-icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
